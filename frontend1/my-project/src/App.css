@@ -1,0 +1,98 @@
+/* .cartoon{
+    margin-top: -250px;
+      background: url(sprite_sheet_girl.png);
+      width: 140px;
+      height: 350px;
+      animation: walk 1s steps(6) infinite,
+              forward 5s linear infinite;
+  }
+  
+  @keyframes walk {
+      0%{
+          background-position: -6px;
+      }
+      100%{
+          background-position: 920px;
+      }
+  }
+  
+  @keyframes forward {
+      0%{
+          transform: translateX(50px);
+      }
+      100%{
+          transform: translateX(900px);
+      }
+  } */
+  body {
+    font-family: Arial, sans-serif;
+    margin-top: 180px; 
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh; 
+    background: linear-gradient(135deg, #56CCF2, #2F80ED);
+    color: #fff;
+  }
+
+  .container {
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 80px; /* Added to move the container higher above the bottom */
+  }
+  h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+  p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+  }
+  li button {
+    background-color: #2F80ED; 
+    color: white; 
+    padding: 20px;
+    border-radius: 40px;
+    border-color: #56CCF2; 
+    position: absolute;
+    left: 2700%;
+    cursor: pointer;
+    font-size: large;
+    top: 7px;
+  }
+  .btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .btn {
+    background-color: #fff;
+    color: #2F80ED;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .btn:hover {
+    background-color: #56CCF2;
+    color: #fff;
+  }
+  .navdiv {
+    display: flex; 
+    margin: -10px;
+    position: absolute;
+    text-decoration: none;  
+    top: 3%; 
+  }
+  li {
+    font-family: 'Times New Roman', Times, serif;
+    list-style: none; 
+    display: inline-block; 
+  }
