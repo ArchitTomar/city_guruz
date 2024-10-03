@@ -96,3 +96,43 @@
     list-style: none; 
     display: inline-block; 
   }
+.btn-login {
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.login-form {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: left;
+}
+
+.login-form h3 {
+  margin-bottom: 10px;
+}
+
+.login-form input {
+  padding: 10px;
+  margin: 5px 0;
+  width: 100%;
+  font-size: 16px;
+}
+
+.login-form button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 18px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}

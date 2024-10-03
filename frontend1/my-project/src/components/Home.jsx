@@ -14,6 +14,7 @@ const Home = () => {
           <button className="btn">I'm a Tourist</button>
         </Link>
       </div>
+      
     </div>
   );
 };
