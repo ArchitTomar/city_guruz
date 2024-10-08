@@ -1,14 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const Dropdown = ({ label, options, onChange }) => {
   return (
-    <div className="dropdown-container">
-      <label className="dropdown-label">{label}</label>
-      <select className="dropdown-select" onChange={onChange}>
-        {options.map((option) => (
-          <option key={option.value} value={option.value}>
-            {option.label}
-          </option>
+    <div className="dropdown">
+      <label>{label}</label>
+      <select onChange={onChange}>
+        <option value="">--Select--</option>
+        {options.map((option, index) => (
+          <option key={index} value={option.value}>{option.label}</option>
         ))}
       </select>
     </div>
