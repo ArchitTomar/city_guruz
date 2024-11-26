@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Main from './components/Main';
 import Tourist from './components/Tourist'; 
 import Student from './components/Student';
+import Place from './components/Place';
 
 function App() {
   return (
