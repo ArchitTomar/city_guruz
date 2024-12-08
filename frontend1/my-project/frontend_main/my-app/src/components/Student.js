@@ -13,6 +13,8 @@ const Student = () => {
             <a href="#features" className="navLink">Features</a>
             <a href="#courses" className="navLink">Courses</a>
             <a href="#about" className="navLink">About</a>
+            <a href="#Login" className="navLink">Login</a>
+            <a href="#Profile" className="navLink">Profile</a>
           </nav>
         </div>
       </header>
@@ -92,15 +94,16 @@ const Student = () => {
 
 // Features data with icons
 const features = [
-  { id: 1, icon: <FaBook />, title: "Education Services", description: "Comprehensive learning resources to boost your skills." },
-  { id: 2, icon: <FaChalkboardTeacher />, title: "Expert Mentors", description: "Guidance from experienced professionals." },
-  { id: 3, icon: <FaHeadset />, title: "24/7 Support", description: "Support throughout your learning journey." },
-  { id: 4, icon: <FaLaptop />, title: "Online/Offline Classes", description: "Flexibility to learn anywhere, anytime." },
-  { id: 5, icon: <FaGraduationCap />, title: "Certification Courses", description: "Get certified in various fields." },
-  { id: 6, icon: <FaGlobe />, title: "Global Access", description: "Access from anywhere in the world." },
-  { id: 7, icon: <FaLightbulb />, title: "Innovative Learning", description: "Creative ways to learn new concepts." },
-  { id: 8, icon: <FaTools />, title: "Practical Tools", description: "Hands-on tools for real-world learning." },
-  { id: 9, icon: <FaUserShield />, title: "Safe Environment", description: "Learn in a safe and secure platform." },
+  { id: 1, icon: <FaBook />, title: "Library", description: "Comprehensive learning resources to boost your skills." },
+  { id: 2, icon: <FaChalkboardTeacher />, title: "Cafe", description: "Guidance from experienced professionals." },
+  { id: 3, icon: <FaHeadset />, title: "Course", description: "Support throughout your learning journey." },
+  { id: 4, icon: <FaLaptop />, title: "Online Quiz", description: "Flexibility to learn anywhere, anytime." },
+  { id: 5, icon: <FaGraduationCap />, title: "Compititive Exam Info.", description: "Get certified in various fields." },
+  { id: 6, icon: <FaGlobe />, title: "Exhibition Schedule", description: "Access from anywhere in the world." },
+  { id: 7, icon: <FaLightbulb />, title: "To do List", description: "Creative ways to learn new concepts." },
+  { id: 8, icon: <FaTools />, title: "Feedback", description: "Hands-on tools for real-world learning." },
+  { id: 9, icon: <FaUserShield />, title: "Career Path Finder", description: "Learn in a safe and secure platform." },
+  { id: 10, icon: <FaUserShield />, title: "Chatbot", description: "Learn in a safe and secure platform." },
 ];
 
 export default Student;

@@ -1,7 +1,7 @@
 /* Header */
 .header {
     background-color: #123456;
-    padding: 0px 0;
+    padding: 15px 0;
   }
   
   .headerContent {
@@ -162,7 +162,7 @@
   }
   
   .featureItem {
-    background-color: #d8eb9c;
+    background-color: hsl(236, 98%, 77%);
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 3px 2px rgba(0, 0, 0, 0.1);
@@ -186,7 +186,7 @@
   
   .thoughtItem {
     flex: 1 1 calc(33% - 20px);
-    background-color: #f9f9f9;
+    background-color: hsl(236, 98%, 77%);
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
