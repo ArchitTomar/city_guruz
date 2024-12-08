@@ -24,7 +24,7 @@
           transform: translateX(900px);
       }
   } */
-  body {
+  /* body {
     font-family: Arial, sans-serif;
     margin-top: 180px; 
     padding: 0;
@@ -42,9 +42,9 @@
     border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.4);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    margin-bottom: 80px; /* Added to move the container higher above the bottom */
-  }
-  h1 {
+    margin-bottom: 80px; /* Added to move the container higher above the bottom }*/
+  
+  /*h1{
     font-size: 3em;
     margin-bottom: 20px;
     letter-spacing: 1px;
@@ -148,4 +148,4 @@
   h2 {
     text-align: center;
   }
-  
+   */

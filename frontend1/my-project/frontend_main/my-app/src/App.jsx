@@ -1,25 +1,25 @@
-import React from 'react';
-import './App.css';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import Main from './components/Main';
-import Tourist from './components/Tourist'; 
-import Student from './components/Student';
-import Place from './components/Place';
+import React from "react";
+import Header from "./components/Header";
+import Login from "./components/Login";
+import FeaturesSection from "./components/FeaturesSection";
+import Slideshow from "./components/Slideshow";
+import SearchBar from "./components/SearchBar";
+import SuccessStorySection from "./components/SuccessStorySection";
+import "./index.css";
 
-function App() {
+const App = () => {
   return (
-    <Router>
-      <div className="App">
-        <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="/Tourist" element={<Tourist />} />
-          <Route path="/Student" element={<Student />} />
-        </Routes>
+    <div className="App">
+      <Header />
+      <div className="main-container">
+        <Slideshow />
+        <SearchBar />
       </div>
-    </Router>
+      <Login />
+      <FeaturesSection />
+      <SuccessStorySection />
+    </div>
   );
-}
+};
 
 export default App;
-
-
