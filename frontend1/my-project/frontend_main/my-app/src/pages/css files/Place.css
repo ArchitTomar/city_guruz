@@ -1,4 +1,4 @@
-body{
+body {
   margin-left: 45px;
   margin-right: 45px;
   background-color: #f8faff;
@@ -14,16 +14,16 @@ body{
 }
 
 .grid {
+  flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
   gap: 20px;
   width: 100%;
-  height: 400px; 
+  height: 400px;
 }
 
 .grid div {
-  /* border: 0.6px solid #94c2ef; */
   border-radius: 5px;
   background-color: #d9eaff;
   text-align: center;
@@ -36,41 +36,41 @@ body{
 img {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
-  border-radius: 10px; 
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .main_box {
-  flex: 2; 
+  flex: 2;
   height: 100%;
 }
 
 .long_box {
-  flex: 1.5; 
+  flex: 1.5;
   height: 100%;
 }
 
 .column {
-  flex: 1; 
+  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
 .column:nth-child(2) {
-  flex-direction: column; 
+  flex-direction: column;
 }
 
 .column:nth-child(3) {
-  flex-direction: column-reverse; 
+  flex-direction: column-reverse;
 }
 
 .small_box {
-  height: 40%; 
+  height: 40%;
 }
 
 .large_box {
-  height: 60%; 
+  height: 60%;
 }
 
 .tourist-container {
@@ -94,10 +94,12 @@ img {
   font-size: 14px;
   background-color: #4caf50;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
 }
 
 .hashtag:hover {
   background-color: #357a38;
-   color:#fff;
+  color: #fff;
 }

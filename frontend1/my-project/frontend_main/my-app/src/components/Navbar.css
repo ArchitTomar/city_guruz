@@ -1,0 +1,102 @@
+.navbar-tour {
+  position: absolute;
+  height: 60px;
+  top: 0;
+  width: 92.6%;
+  margin: 0 45px 0 45px;
+  /* background-color: rgba(0, 0, 0, 0.1);  */
+  color: white;
+  display: flex;
+  z-index: 10;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-tour ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar-tour ul li {
+  margin-right: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navbar-tour ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar-tour-logo {
+  margin-left: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar-tour nav ul li:hover {
+  color: #007bff;
+}
+/*   
+  .sidebar-toggle {
+    font-size: 24px;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+   */
+.sidebar {
+  position: fixed;
+  right: -100%;
+  width: 250px;
+  height: 100%;
+  background-color: #052946;
+  color: white;
+  padding: 20px;
+  transition: RIGHT 0.3s ease;
+  z-index: 1000;
+}
+
+.sidebar.active {
+  right: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.close-sidebar {
+  font-size: 24px;
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.sidebar-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}

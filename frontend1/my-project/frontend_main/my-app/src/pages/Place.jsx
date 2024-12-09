@@ -1,11 +1,13 @@
 import React from "react";
 import agrataj from "../videos/agrataj.png";
-import "./Place.css";
-import Placedetails from "./Placedetails";
+import "./css files/Place.css";
+import Placedetails from "../components/Placedetails";
+import Searchbar from "../components/Searchbar";
 
 const Place = () => {
   return (
     <div className="main_place">
+      {/* </Searchbar> */}
       <div className="grid">
         <div className="main_box">
           <img src={agrataj} alt="Main Box" />
@@ -33,19 +35,18 @@ const Place = () => {
       <h1>PLACE_NAME</h1>
       <h2>⟟CITY_NAME</h2>
       <div className="tourist-container">
-      <h3>#Hashtags</h3>
-      <div className="hashtags">
-        <span className="hashtag">#Adventure</span>
-        <span className="hashtag">#Culture</span>
-        <span className="hashtag">#Foodie</span>
-        <span className="hashtag">#Nature</span>
-        <span className="hashtag">#Historical</span>
-        <span className="hashtag">#Relaxation</span>
+        <h3>#Hashtags</h3>
+        <div className="hashtags">
+          <span className="hashtag">#Adventure</span>
+          <span className="hashtag">#Culture</span>
+          <span className="hashtag">#Foodie</span>
+          <span className="hashtag">#Nature</span>
+          <span className="hashtag">#Historical</span>
+          <span className="hashtag">#Relaxation</span>
+        </div>
       </div>
+      <Placedetails />
     </div>
-  <Placedetails/>
-  </div>
-    
   );
 };
 

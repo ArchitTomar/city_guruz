@@ -1,0 +1,37 @@
+.Citybox {
+  display: flex;
+  width: 600px;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.Citybox:hover {
+  transform: scale(1.05);
+}
+
+.place-image {
+  width: 40%;
+  height: auto;
+  object-fit: cover;
+}
+
+.place-info {
+  padding: 20px;
+  flex: 1;
+}
+
+.place-title {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.place-description {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #555;
+}

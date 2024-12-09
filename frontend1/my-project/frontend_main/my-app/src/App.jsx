@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import Main from './components/Main';
-import Tourist from './components/Tourist'; 
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Main from './pages/Main';
+import Tourist from './pages/TouristM'; 
 import Student from './components/Student';
-import Place from './components/Place';
+// import Place from './components/Place';
 
 function App() {
   return (
