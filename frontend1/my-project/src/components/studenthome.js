@@ -4,7 +4,7 @@ import "./studenthome.css"; // Importing the CSS file
 import { Link } from "react-router-dom";
 
 
-const Student = () => {
+const Stud = () => {
   return (
     <div>
       {/* Header Section */}
@@ -157,4 +157,4 @@ const features = [
 ];
 
 
-export default Student;
+export default Stud;

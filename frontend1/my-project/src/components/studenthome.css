@@ -1,0 +1,241 @@
+/* Header */
+.header {
+    background-color: #123456;
+    padding: 0px 0;
+  }
+  
+  .headerContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .logo {
+    font-size: 24px;
+  }
+  
+  .nav {
+    display: flex;
+  }
+  
+  .navLink {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://i.pinimg.com/736x/d4/6c/93/d46c9348c617e0848a2597d47c572d86.jpg');
+    background-color: rgba(0, 0, 0, 0.226);
+    background-size: cover;
+    background-position: center;
+    color: rgb(7, 7, 7);
+    width: 1400px;
+    height: 500px;
+    margin: center;
+    top: 290px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 60px; /* Add gap below the hero section */
+  }
+  
+  
+  .heroImageBox {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .heroImage {
+    width: 410px;
+    height: 380px;
+    border-radius: 8px;
+  }
+  
+  .heroContent {
+    display: flex;
+    justify-content: flex-start; /* Align content to the left */
+    width: 100%; /* Make sure it spans the full width */
+    padding: 0 80px;
+    color: #fff;
+    box-sizing: border-box; /* Ensure padding does not overflow */
+  }
+  
+  .heroTextContainer {
+    max-width: 50%; /* Text container will take up 50% of the width */
+    text-align: left;
+  }
+  
+  .heroTitle {
+    font-size: 48px; /* Larger title */
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .heroText {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .heroButtons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .primaryButton {
+    padding: 12px 24px;
+    background-color: #021f3c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .secondaryButton {
+    padding: 12px 24px;
+    background-color: #fff;
+    color: #020c16;
+    border: 1px solid #051729;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .heroContent {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .heroTextContainer {
+      max-width: 100%; /* Full width for smaller screens */
+      margin-bottom: 20px;
+    }
+  
+    .heroTitle {
+      font-size: 32px; /* Adjust font size for smaller screens */
+      color: #fff;
+    }
+  
+    .heroText {
+      font-size: 16px;
+      color: #fff;
+    }
+  
+    .heroButtons {
+        flex-direction: column;
+        gap: 15px;
+      }
+  }
+  
+  .features {
+    padding: 40px 90px;
+    text-align: center;
+    background-image: url("https://media.istockphoto.com/id/1352243076/vector/vector-frame-back-to-school-with-education.jpg?s=612x612&w=0&k=20&c=Webaox16tZXxzHtfiidbm7_zd2NlD_FVi1QjciBpKp4=");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 60px; /* Add gap above the features section */
+  }
+  
+  .sectionTitle {
+    font-size: 30px; /* Slightly smaller title font size */
+    margin-bottom: 20px; /* Adjust margin below the title */
+    color: antiquewhite;
+  }
+  
+  .featureItems {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ensure 3 boxes per line */
+    gap: 20px; /* Maintain a consistent gap between boxes */
+    justify-items: center; /* Center-align the boxes */
+  }
+  
+  .featureItem {
+    background-color: #f0f0f5;
+    padding: 10px; /* Adjust padding for a smaller box */
+    border-radius: 6px; /* Subtle rounded corners */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+    text-align: center;
+    color: #0c0c0c;
+    width: 200px; /* Set a fixed width for the boxes */
+  }
+  
+  .featureItem:hover,
+  .featureItem:link,
+  .featureItem:visited {
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .icon {
+    font-size: 30px; /* Adjust icon size */
+    color: #090909;
+    margin-bottom: 10px; /* Adjust spacing below the icon */
+  }
+  
+  .featureItem h3 {
+    font-size: 16px; /* Smaller font size for title */
+    margin: 8px 0; /* Adjust margin */
+  }
+  
+  .featureItem p {
+    font-size: 14px; /* Smaller font size for description */
+    margin: 5px 0; /* Adjust margin */
+  }
+  
+  
+  /* Courses Section */
+  .thoughtItems {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+    padding: 10px 0;
+  }
+  .courseTitle {
+    font-size: 30px; /* Slightly smaller title font size */
+    margin-bottom: 20px; /* Adjust margin below the title */
+    color: rgb(12, 12, 12);
+  }
+  .thoughtItem {
+    flex: 1 1 calc(33% - 20px);
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+    
+  }
+  
+  .thoughtText {
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  .thoughtAuthor {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #123456;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  

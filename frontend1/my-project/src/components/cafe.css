@@ -1,0 +1,291 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: "Arial", sans-serif;
+    
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+/* App Layout */
+.cafe-app {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    color: #4e342e;
+    overflow: hidden;
+}
+
+/* Sidebar Styles */
+.cafe-sidebar {
+    width: 280px;
+    background: linear-gradient(45deg, #6d4c41, #3b261f);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: fixed; /* Fixed sidebar */
+}
+
+.cafe-sidebar:hover {
+    box-shadow: 8px 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Logo */
+.cafe-logo {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: white;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+}
+
+.cafe-logo:hover {
+    color: #f5f5f5;
+}
+
+/* Navigation Menu */
+.cafe-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.cafe-nav li {
+    margin: 20px 0;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.cafe-nav li:hover {
+    color: #8d6e63;
+    padding-left: 10px;
+}
+
+.cafe-nav li i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+/* Sidebar Social Icons */
+.cafe-social {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.cafe-social span {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.cafe-social span:hover {
+    transform: scale(1.2);
+    color: #8d6e63;
+}
+
+/* Content Styles */
+.cafe-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #f3e5ab;
+    padding-left: 330px; /* Offset for sidebar */
+    overflow-y: auto;
+}
+
+/* Header Section */
+.cafe-header {
+    background-image: url('https://nearme.com.sg/wp-content/uploads/2024/07/Best-Cafe-Bishan.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding: 200px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cafe-header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2); /* Dark overlay for readability */
+}
+
+.cafe-header h1 {
+    font-size: 48px;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.cafe-header p {
+    font-size: 18px;
+    margin: 10px 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.cafe-header button {
+    padding: 10px 25px;
+    background-color: #4e342e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cafe-header button:hover {
+    background-color: #6d4c41;
+}
+
+/* Main Section */
+.cafe-main {
+    padding: 40px 20px;
+    background-color: #6d4c41;
+}
+
+.cafe-main h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #edebeb;
+}
+
+/* Product Cards */
+.cafe-products {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cafe-product {
+    width: 250px;
+    height: 300px;
+    background-color: #3a251e;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.cafe-product img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.cafe-product h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #f0ebea;
+}
+
+.cafe-product p {
+    font-size: 14px;
+    color: #f7f3f2;
+}
+
+.cafe-product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Scroll to Top Button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4e342e;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-to-top:hover {
+    background-color: #6d4c41;
+    transform: scale(1.1);
+}
+
+/* Footer Section */
+.cafe-footer {
+    background-color: #4e342e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.cafe-footer a {
+    color: #f5f5f5;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.cafe-footer a:hover {
+    color: #8d6e63;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cafe-sidebar {
+        width: 100%;
+        position: relative; /* Sidebar is no longer fixed */
+    }
+
+    .cafe-header h1 {
+        font-size: 36px;
+        color: #edebeb;
+    }
+
+    .cafe-main h2 {
+        font-size: 28px;
+    }
+
+    .cafe-product {
+        width: 200px;
+        height: 250px;
+    }
+
+    .cafe-content {
+        padding-left: 0; /* No need for padding with mobile view */
+    }
+}
