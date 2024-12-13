@@ -7,7 +7,7 @@ const Home = () => {
       <h1>Welcome to CitiGuruz: Your Travel Guide</h1>
       <p>Are you a student looking for study or a tourist exploring the world?</p>
       <div className="btn-group">
-        <Link to="/student">
+        <Link to="/studenthome">
           <button className="btn">I'm a Student</button>
         </Link>
         <Link to="/tourist">

@@ -1,0 +1,222 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f1faee;
+  color: #1d3557;
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar Styling */
+.careersidebar {
+  width: 300px;
+  background-color: #1d3557;
+  color: #f1faee;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+}
+
+.careerprofile-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.careerprofile-section h3 {
+  font-size: 20px;
+  color: #f1faee;
+}
+
+.careersteps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.careerstep {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.careerstep.careeractive {
+  background-color: #457b9d;
+  font-weight: bold;
+}
+
+.careerstep-title {
+  display: block;
+  font-size: 16px;
+}
+
+.careerstep-duration {
+  font-size: 12px;
+  color: #a8dadc;
+}
+
+.careerextras {
+  margin-top: 30px;
+}
+
+.careerextra-item {
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.careerextra-item:hover {
+  color: #a8dadc;
+}
+
+.careerrestart-sidebar-button {
+  background-color: #e63946;
+  color: #f1faee;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.careerrestart-sidebar-button:hover {
+  background-color: #d62828;
+}
+
+/* Main Content */
+.careermain-content {
+  padding: 20px;
+  flex-grow: 1;
+  margin-left: 320px; /* Space for Sidebar */
+}
+
+.careerstart-container {
+  text-align: center;
+}
+
+.careerstart-container h1 {
+  font-size: 36px;
+  color: #1d3557;
+}
+
+.careerstart-container p {
+  font-size: 18px;
+  color: #1d3557;
+  margin-bottom: 20px;
+}
+
+.careerstart-button,
+.careerrestart-button {
+  background-color: #457b9d;
+  color: #f1faee;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.careerstart-button:hover,
+.careerrestart-button:hover {
+  background-color: #1d3557;
+}
+
+/* Quiz Options Styling */
+.careeroptions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.careeroption-button {
+  background-color: #f1faee;
+  color: #1d3557;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.careeroption-button:hover {
+  background-color: #457b9d;
+  color: #f1faee;
+}
+
+/* Results Container */
+.careerresults-container {
+  text-align: center;
+}
+
+.careerresults-container h1 {
+  font-size: 24px;
+  color: #1d3557;
+}
+
+.careerresults-container p {
+  font-size: 18px;
+  color: #457b9d;
+  margin-bottom: 20px;
+}
+
+.careerresults-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.careerresults-container ul li {
+  background-color: #f1faee;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.careerresults-container h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #1d3557;
+}
+
+.careerresults-container p {
+  font-size: 14px;
+  color: #1d3557;
+}
+
+/* Guide Sections */
+.careerguide-section {
+  margin-top: 50px;
+}
+
+.careerguide-section h2 {
+  font-size: 24px;
+  color: #457b9d;
+  margin-bottom: 15px;
+}
+
+.careerguide-section p {
+  font-size: 16px;
+  color: #1d3557;
+  line-height: 1.6;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .careersidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .careermain-content {
+    margin-left: 0;
+  }
+}
