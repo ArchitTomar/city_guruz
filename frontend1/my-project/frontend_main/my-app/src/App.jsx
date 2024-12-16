@@ -3,7 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Main from './pages/Main';
 import Tourist from './pages/TouristM'; 
-import Student from './components/Student';
+import Student from './pages/Student';
 // import Place from './components/Place';
 
 function App() {

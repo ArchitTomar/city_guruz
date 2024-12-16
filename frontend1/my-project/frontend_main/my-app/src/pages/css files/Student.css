@@ -1,0 +1,228 @@
+/* Header */
+.studentHeader {
+  background-color: #123456;
+  padding: 10px 0;
+}
+
+.studentHeaderContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.studentLogo {
+  font-size: 24px;
+}
+
+.studentNav {
+  display: flex;
+}
+
+.studentNavLink {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.studentHero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://i.pinimg.com/736x/d4/6c/93/d46c9348c617e0848a2597d47c572d86.jpg');
+  background-size: cover;
+  background-position: center;
+  color: rgb(7, 7, 7);
+  height: 500px;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+.studentHeroImageBox {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.studentHeroImage {
+  width: 410px;
+  height: 380px;
+  border-radius: 8px;
+}
+
+.studentHeroContent {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0 80px;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.studentHeroTextContainer {
+  max-width: 50%;
+  text-align: left;
+}
+
+.studentHeroTitle {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.studentHeroText {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.studentHeroButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.studentPrimaryButton {
+  padding: 12px 24px;
+  background-color: #021f3c;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.studentSecondaryButton {
+  padding: 12px 24px;
+  background-color: #fff;
+  color: #020c16;
+  border: 1px solid #051729;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .studentHeroContent {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .studentHeroTextContainer {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .studentHeroTitle {
+    font-size: 32px;
+  }
+
+  .studentHeroText {
+    font-size: 16px;
+  }
+
+  .studentHeroButtons {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+.studentFeatures {
+  padding: 40px 90px;
+  text-align: center;
+  background-image: url("https://media.istockphoto.com/id/1352243076/vector/vector-frame-back-to-school-with-education.jpg?s=612x612&w=0&k=20&c=Webaox16tZXxzHtfiidbm7_zd2NlD_FVi1QjciBpKp4=");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 60px;
+}
+
+.studentSectionTitle {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: antiquewhite;
+}
+
+.studentFeatureItems {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.studentFeatureItem {
+  background-color: #f0f0f5;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #0c0c0c;
+  width: 250px;
+  text-decoration: none;
+}
+
+.studentFeatureItem:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.studentIcon {
+  font-size: 30px;
+  color: #090909;
+  margin-bottom: 10px;
+}
+
+.studentFeatureItem h3 {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+.studentFeatureItem p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+/* Courses Section */
+.studentCourseTitle {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #0c0c0c;
+}
+
+.studentThoughtItems {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.studentThoughtItem {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 300px;
+}
+
+.studentThoughtText {
+  font-size: 16px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.studentThoughtAuthor {
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Footer */
+.studentFooter {
+  background-color: #123456;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
