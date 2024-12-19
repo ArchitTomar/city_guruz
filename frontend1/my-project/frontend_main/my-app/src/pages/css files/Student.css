@@ -1,3 +1,11 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
 /* Header */
 .studentHeader {
   background-color: #123456;
@@ -15,6 +23,7 @@
 
 .studentLogo {
   font-size: 24px;
+  font-weight: bold;
 }
 
 .studentNav {
@@ -25,6 +34,26 @@
   margin: 0 10px;
   color: #fff;
   text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.studentNavLink:hover {
+  color: #87ceeb;
+}
+
+/* Login Button */
+.loginButton {
+  padding: 10px 20px;
+  background-color: #0056b3;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.loginButton:hover {
+  background-color: #003d80;
 }
 
 /* Hero Section */
@@ -36,9 +65,8 @@
   background-image: url('https://i.pinimg.com/736x/d4/6c/93/d46c9348c617e0848a2597d47c572d86.jpg');
   background-size: cover;
   background-position: center;
-  color: rgb(7, 7, 7);
+  color: #fff;
   height: 500px;
-  margin: auto;
   margin-bottom: 60px;
 }
 
@@ -73,7 +101,6 @@
   font-size: 48px;
   margin-bottom: 20px;
   font-weight: bold;
-  color: #fff;
 }
 
 .studentHeroText {
@@ -86,64 +113,103 @@
   gap: 10px;
 }
 
-.studentPrimaryButton {
+.studentPrimaryButton,
+.studentSecondaryButton {
   padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.studentPrimaryButton {
   background-color: #021f3c;
   color: #fff;
   border: none;
-  cursor: pointer;
-  text-decoration: none;
+}
+
+.studentPrimaryButton:hover {
+  background-color: #014f7f;
 }
 
 .studentSecondaryButton {
-  padding: 12px 24px;
   background-color: #fff;
-  color: #020c16;
-  border: 1px solid #051729;
+  color: #021f3c;
+  border: 1px solid #021f3c;
+}
+
+.studentSecondaryButton:hover {
+  background-color: #f0f0f0;
+}
+
+/* Search Bar Container */
+.searchBarContainer {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.searchBar {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #007bff;
+  border-radius: 25px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.searchBar:focus {
+  border-color: #0056b3;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9;
+}
+
+.dropdownList {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  width: 100%;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  overflow: hidden;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.dropdownItem {
+  padding: 10px 16px;
   cursor: pointer;
-  text-decoration: none;
+  font-size: 15px;
+  transition: background-color 0.2s ease;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .studentHeroContent {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .studentHeroTextContainer {
-    max-width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .studentHeroTitle {
-    font-size: 32px;
-  }
-
-  .studentHeroText {
-    font-size: 16px;
-  }
-
-  .studentHeroButtons {
-    flex-direction: column;
-    gap: 15px;
-  }
+.dropdownItem:hover {
+  background-color: #edf1f5;
+  color: #333;
 }
 
+.dropdownItem:last-child {
+  font-style: italic;
+  color: #666;
+}
+
+/* Features Section */
 .studentFeatures {
   padding: 40px 90px;
   text-align: center;
-  background-image: url("https://media.istockphoto.com/id/1352243076/vector/vector-frame-back-to-school-with-education.jpg?s=612x612&w=0&k=20&c=Webaox16tZXxzHtfiidbm7_zd2NlD_FVi1QjciBpKp4=");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-top: 60px;
+  background-image: url('https://w0.peakpx.com/wallpaper/188/479/HD-wallpaper-retro-education-texture-creative-education-background-brown-education-texture-background-with-books-books-texture-tree-education-background.jpg');
 }
 
 .studentSectionTitle {
   font-size: 30px;
   margin-bottom: 20px;
-  color: antiquewhite;
+  color: #f1f3f5;
 }
 
 .studentFeatureItems {
@@ -154,23 +220,26 @@
 }
 
 .studentFeatureItem {
-  background-color: #f0f0f5;
+  background-color: #0a4862;
   padding: 20px;
-  border-radius: 6px;
+  border-radius: 8px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
   text-align: center;
-  color: #0c0c0c;
   width: 250px;
   text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #f8f6f6;
 }
 
+
 .studentFeatureItem:hover {
+  transform: translateY(-5px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .studentIcon {
   font-size: 30px;
-  color: #090909;
+  color: #f5f8fb;
   margin-bottom: 10px;
 }
 
@@ -184,22 +253,20 @@
   margin: 5px 0;
 }
 
-/* Courses Section */
-.studentCourseTitle {
-  font-size: 30px;
-  margin-bottom: 20px;
-  color: #0c0c0c;
-}
-
+/* Author Section */
 .studentThoughtItems {
   display: flex;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
+  padding: 40px 90px;
+  color: #0a0a0a;
+  background-color: #f9f9f9;
 }
 
 .studentThoughtItem {
-  background-color: #f9f9f9;
+  background-color: #0a4862;
+  color: #0a0a0a;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -216,7 +283,7 @@
 .studentThoughtAuthor {
   font-size: 14px;
   font-weight: bold;
-  color: #555;
+  color: #080808;
 }
 
 /* Footer */
@@ -226,3 +293,5 @@
   text-align: center;
   padding: 10px 0;
 }
+
+

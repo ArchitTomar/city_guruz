@@ -68,6 +68,7 @@ body {
   .tips-content {
     width: 100%;
     margin-top: 40px;
+    
   }
   
   .tips-grid, .tips-movies, .tips-novels {
@@ -78,7 +79,7 @@ body {
   }
   
   .tips-card {
-    background: #fff;
+    background: #679fde;
     padding: 75px;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);

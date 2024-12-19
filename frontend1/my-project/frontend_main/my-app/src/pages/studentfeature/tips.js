@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./tips.css";
 
-function Top() {
+function Tips() {
   // Arrays with 20 items each
   const motivationalTips = [
     { title: "Believe in Yourself", description: "Confidence in your abilities is the first step to success.", icon: "🌟" },
@@ -158,4 +158,4 @@ function Top() {
   );
 }
 
-export default Top;
+export default Tips;

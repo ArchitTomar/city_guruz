@@ -1,20 +1,91 @@
-import React from "react";
-import { FaBook, FaChalkboardTeacher, FaHeadset, FaLaptop, FaGraduationCap, FaGlobe, FaLightbulb, FaTools, FaUserShield } from "react-icons/fa";
-import "./css files/Student.css"; // Importing the CSS file
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import {
+  FaBook,
+  FaChalkboardTeacher,
+  FaHeadset,
+  FaGraduationCap,
+  FaLightbulb,
+  FaTools,
+  FaUserShield,
+} from "react-icons/fa";
+import { Link, useNavigate } from "react-router-dom";
+import "./css files/Student.css";
 
 const Student = () => {
+  // State for city search functionality
+  const [cityQuery, setCityQuery] = useState("");
+  const [filteredCities, setFilteredCities] = useState([]);
+
+  // List of cities for the search dropdown
+  const cities = [
+    "Karnatak",
+    "Mumbai",
+    "Delhi",
+    "Chennai",
+    "Kerala",
+    "Houston",
+    "Phoenix",
+    "Philadelphia",
+    "San Antonio",
+    "San Diego",
+    "Dallas",
+    "San Jose",
+    "Boston",
+    "Seattle",
+    "Denver",
+    "Miami",
+    "Austin",
+  ];
+
+  const navigate = useNavigate(); // Initialize useNavigate
+
+  // Handler for city search input
+  const handleSearch = (e) => {
+    const query = e.target.value;
+    setCityQuery(query);
+    setFilteredCities(
+      cities.filter((city) =>
+        city.toLowerCase().includes(query.toLowerCase())
+      )
+    );
+  };
+
+  // Handle city click
+  const handleCityClick = (city) => {
+    // Map cities to specific routes
+    const cityRoutes = {
+      Mumbai: "/mumbai",
+      Delhi: "/delhi",
+      Chennai: "/chennai",
+    };
+
+    // Navigate to the corresponding route
+    if (cityRoutes[city]) {
+      navigate(cityRoutes[city]);
+    } else {
+      alert(`No page available for the selected city: ${city}`);
+    }
+  };
+
   return (
     <div>
       {/* Header Section */}
       <header className="studentHeader">
         <div className="studentHeaderContent">
-          <h1 className="studentLogo">EDUCTO</h1>
+          <h1 className="studentLogo">CityGuruz</h1>
           <nav className="studentNav">
-            <a href="#features" className="studentNavLink">Features</a>
-            <a href="#courses" className="studentNavLink">Courses</a>
-            <a href="#about" className="studentNavLink">About</a>
+            <a href="#features" className="studentNavLink">
+              Features
+            </a>
+            <a href="#author" className="studentNavLink">
+              Author
+            </a>
+            <a href="#about" className="studentNavLink">
+              About
+            </a>
           </nav>
+          {/* Login Button */}
+          <button className="loginButton">Login</button>
         </div>
       </header>
 
@@ -24,11 +95,36 @@ const Student = () => {
           <div className="studentHeroTextContainer">
             <h2 className="studentHeroTitle">Looking to Explore Your Knowledge</h2>
             <p className="studentHeroText">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur, magna et vehicula luctus, nulla justo vehicula lorem.
+              Search for universities in your desired city and find the best fit
+              for your future!
             </p>
-            <div className="studentHeroButtons">
-              <a href="#pb" className="studentPrimaryButton">Join Courses</a>
-              <a href="#sb" className="studentSecondaryButton">Watch Free</a>
+
+            {/* Search Bar */}
+            <div className="searchBarContainer">
+              <input
+                type="text"
+                placeholder="Search for a city..."
+                value={cityQuery}
+                onChange={handleSearch}
+                className="searchBar"
+              />
+              {cityQuery && (
+                <ul className="dropdownList">
+                  {filteredCities.length > 0 ? (
+                    filteredCities.map((city, index) => (
+                      <li
+                        key={index}
+                        className="dropdownItem"
+                        onClick={() => handleCityClick(city)} // Attach onClick event
+                      >
+                        {city}
+                      </li>
+                    ))
+                  ) : (
+                    <li className="dropdownItem">No results found</li>
+                  )}
+                </ul>
+              )}
             </div>
           </div>
           <div className="studentHeroImageBox">
@@ -45,18 +141,18 @@ const Student = () => {
       <section id="features" className="studentFeatures">
         <h2 className="studentSectionTitle">Our Special Features</h2>
         <div className="studentFeatureItems">
-        {features.map(({ id, icon, title, description, link }) => (
-        <Link key={id} to={link} className="studentFeatureItem">
-        <div className="studentIcon">{icon}</div>
-        <h3>{title}</h3>
-        <p>{description}</p>
-        </Link>
-))}
+          {features.map(({ id, icon, title, description, link }) => (
+            <Link key={id} to={link} className="studentFeatureItem">
+              <div className="studentIcon">{icon}</div>
+              <h3>{title}</h3>
+              <p>{description}</p>
+            </Link>
+          ))}
         </div>
       </section>
 
-      {/* Courses Section */}
-      <section id="courses" className="studentThoughtItems">
+      {/* Student Author Section */}
+      <section id="author" className="studentThoughtItems">
         <h2 className="studentCourseTitle">Thoughts About Education</h2>
         <div className="studentThoughtItems">
           <div className="studentThoughtItem">
@@ -90,68 +186,47 @@ const Student = () => {
 
 // Features data with icons and links
 const features = [
-  { 
-    id: 1, 
-    icon: <FaBook />, 
-    title: "Library", 
-    description: "Explore an extensive collection of books and resources.", 
-    link: "https://example.com/library" 
+  {
+    id: 1,
+    icon: <FaChalkboardTeacher />,
+    title: "Cafe",
+    description: "Find the best study-friendly cafes around you.",
+    link: "/cafe",
   },
-  { 
-    id: 2, 
-    icon: <FaChalkboardTeacher />, 
-    title: "Cafe", 
-    description: "Find the best study-friendly cafes around you.", 
-    link: "/cafe" 
+  {
+    id: 2,
+    icon: <FaTools />,
+    title: "To-Do List",
+    description: "Organize and manage your daily tasks efficiently.",
+    link: "/todo",
   },
-  { 
-    id: 3, 
-    icon: <FaLightbulb />, 
-    title: "Exhibition Schedule", 
-    description: "Stay updated with upcoming educational exhibitions.", 
-    link: "https://example.com/exhibition-schedule" 
+  {
+    id: 3,
+    icon: <FaHeadset />,
+    title: "Chatbot",
+    description: "Get instant assistance with our AI-powered chatbot.",
+    link: "https://example.com/chatbot",
   },
-  { 
-    id: 4, 
-    icon: <FaTools />, 
-    title: "To-Do List", 
-    description: "Organize and manage your daily tasks efficiently.", 
-    link:"/todo"
+  {
+    id: 4,
+    icon: <FaGraduationCap />,
+    title: "Career Path Finder",
+    description: "Discover the best career options tailored to you.",
+    link: "/career",
   },
-  { 
-    id: 5, 
-    icon: <FaHeadset />, 
-    title: "Chatbot", 
-    description: "Get instant assistance with our AI-powered chatbot.", 
-    link: "https://example.com/chatbot" 
+  {
+    id: 5,
+    icon: <FaLightbulb />,
+    title: "Tips for Students",
+    description: "Learn effective strategies to excel in your studies.",
+    link: "/tips",
   },
-  { 
-    id: 6, 
-    icon: <FaGraduationCap />, 
-    title: "Career Path Finder", 
-    description: "Discover the best career options tailored to you.", 
-    link: "/career" 
-  },
-  { 
-    id: 7, 
-    icon: <FaLightbulb />, 
-    title: "Tips for Students", 
-    description: "Learn effective strategies to excel in your studies.", 
-    link: "/tips" 
-  },
-  { 
-    id: 8, 
-    icon: <FaUserShield />, 
-    title: "Success Stories", 
-    description: "Get inspired by stories of successful individuals.", 
-    link: "/success" 
-  },
-  { 
-    id: 9, 
-    icon: <FaGlobe />, 
-    title: "Competitive Exam Info", 
-    description: "Access essential details about competitive exams.", 
-    link: "https://example.com/competitive-exams" 
+  {
+    id: 6,
+    icon: <FaUserShield />,
+    title: "Success Stories",
+    description: "Get inspired by stories of successful individuals.",
+    link: "/success",
   },
 ];
 

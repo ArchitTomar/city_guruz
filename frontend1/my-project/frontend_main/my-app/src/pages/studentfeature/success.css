@@ -1,0 +1,198 @@
+/* Global Styles */
+.success-app-container {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header Styles */
+.success-header {
+  background-color: #3a4e7f;
+  color: white;
+  text-align: center;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 30px;
+}
+
+.success-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.success-header p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* Success Cards Container */
+.success-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 40px;
+}
+
+.success-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.success-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styles */
+.success-card-image {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+/* Text Content */
+.success-card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.success-card-description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Modal Styles */
+.success-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow-y: auto;  /* Allow scrolling if modal content exceeds height */
+  padding: 20px;
+}
+
+.success-modal-content {
+  background-color: #3e6582;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  max-height: 80vh;  /* Limit the height of the modal */
+  overflow-y: auto;  /* Make the content scrollable */
+}
+
+.success-modal-image {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.success-modal-close {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.success-modal-close:hover {
+  background-color: #e60000;
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .success-header {
+      padding: 30px;
+  }
+
+  .success-header h1 {
+      font-size: 2rem;
+  }
+
+  .success-header p {
+      font-size: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .success-cards-container {
+      gap: 15px;
+  }
+
+  .success-card {
+      padding: 15px;
+  }
+
+  .success-card-title {
+      font-size: 1.2rem;
+  }
+
+  .success-card-description {
+      font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .success-header h1 {
+      font-size: 1.8rem;
+  }
+
+  .success-header p {
+      font-size: 0.9rem;
+  }
+
+  .success-card {
+      padding: 10px;
+  }
+
+  .success-card-title {
+      font-size: 1rem;
+  }
+
+  .success-card-description {
+      font-size: 0.8rem;
+  }
+}
