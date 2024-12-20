@@ -3,6 +3,9 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Main from './pages/Main';
 import Tourist from './pages/TouristM'; 
+import Search from "./pages/Search";
+import Cityboxes from "./components/Cityboxes";
+import Placedetails from "./components/Placedetails";
 import Student from './pages/Student';
 import Todo from './pages/studentfeature/todo';
 import Cafe from './pages/studentfeature/cafe';
@@ -11,6 +14,9 @@ import Suc from './pages/studentfeature/success';
 import Car from './pages/studentfeature/career';
 import Mumbai from "./pages/studentfeature/mumbai";
 // import Place from './components/Place';
+import Login from './components/Login.js';
+import Signup from './components/Signup';
+import Home from './components/Home';
 
 function App() {
   return (
@@ -21,12 +27,11 @@ function App() {
           <Route path="/Tourist" element={<Tourist />} />
           <Route path="/Student" element={<Student />} />
           <Route path="/todo" element={<Todo />} />
-          <Route path="/cafe" element={<Cafe />} />
+          <Route path="/cafe" element={<Cafe/>} />
           <Route path="/tips" element={<Tips />} />
           <Route path="/success" element={<Suc />} />
           <Route path="/career" element={<Car />} />
           <Route path="/mumbai" element={<Mumbai />} />
-
         </Routes>
       </div>
     </Router>

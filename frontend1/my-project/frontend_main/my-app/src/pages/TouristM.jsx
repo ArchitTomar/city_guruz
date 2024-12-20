@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./css files/TouristM.css";
-import Searchbar from "../components/Searchbar";
 import Footer from "../components/Footer";
 import SliderComp from "../components/SliderComp";
 
@@ -101,7 +100,10 @@ const TouristM = () => {
       >
         Where are you off to?
       </h1>
-      <Searchbar />
+      <Link to="/Search">
+        <button className="search-button" >Search Here</button>
+      </Link>
+
       <section>
         <SliderComp />
       </section>

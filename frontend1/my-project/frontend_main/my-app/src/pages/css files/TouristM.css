@@ -153,3 +153,19 @@
   align-items: center;
   margin-top: 20px;
 }
+
+.search-button{
+  width: 70%;
+  border-radius: 15px;
+  display: inline-block;
+  /* margin-left: 15%; */
+  background-color: white;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
+  overflow: visible;
+  padding-bottom: 0;
+  height:40px;
+  text-align:left;
+  text-decoration: none;
+  margin: 20px 10px 20px 200px;
+}
+

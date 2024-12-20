@@ -1,6 +1,6 @@
 import React from "react";
 import "./Placedetails.css";
-import maps from "../videos/maps.png";
+import maps from "../images/maps.png";
 import { useState } from "react";
 
 const Placedetails = () => {
