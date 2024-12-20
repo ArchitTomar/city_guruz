@@ -53,23 +53,22 @@ function Tips() {
   const movies = [
     { title: "The Pursuit of Happyness", description: "A story of resilience and determination.", image: "https://images.moviesanywhere.com/08b5312f6334adf18414ccfb2093960a/80420ae5-16eb-41ce-b0be-a6f2a04b1a16.jpg" },
     { title: "3 Idiots", description: "A movie about following passion over societal expectations.", image: "https://m.media-amazon.com/images/M/MV5BNzc4ZWQ3NmYtODE0Ny00YTQ4LTlkZWItNTBkMGQ0MmUwMmJlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
-    { title: "The Shawshank Redemption", description: "A film about hope, resilience, and friendship.", image: "https://m.media-amazon.com/images/I/51zUbui+YdL._AC_.jpg" },
-    { title: "Forrest Gump", description: "A man with a low IQ achieves amazing feats.", image: "https://m.media-amazon.com/images/I/91YvqOmkzCL._AC_SY679_.jpg" },
-    { title: "Rocky", description: "The story of a boxer who gets a shot at the title.", image: "https://m.media-amazon.com/images/I/71I+yOEm6yL._AC_SY679_.jpg" },
-    { title: "The Secret Life of Walter Mitty", description: "A man escapes his mundane life through adventure.", image: "https://m.media-amazon.com/images/I/71pUlvZc2TL._AC_SY679_.jpg" },
-    { title: "Rudy", description: "A man fights to achieve his dreams against all odds.", image: "https://m.media-amazon.com/images/I/81n6+aLfOsL._AC_SY679_.jpg" },
-    { title: "The Pursuit of Happyness", description: "A heartwarming film about perseverance.", image: "https://m.media-amazon.com/images/I/51Wfl65ZjPL._AC_.jpg" },
-    { title: "The Social Network", description: "The story behind the creation of Facebook.", image: "https://m.media-amazon.com/images/I/61r-72xLJQL._AC_SY679_.jpg" },
-    { title: "Dead Poet's Society", description: "A teacher inspires his students to live boldly.", image: "https://m.media-amazon.com/images/I/71bQWj72mDL._AC_SY679_.jpg" },
+    { title: "The Shawshank Redemption", description: "A film about hope, resilience, and friendship.", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-sKn2cILCNSkdsuWvINAQ84a3O6shl66j0A&s" },
+    { title: "Forrest Gump", description: "A man with a low IQ achieves amazing feats.", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxtSbzvmzfTs4e73JaYqqVpFAfaL3kF4fxfg&s" },
+    { title: "Rocky", description: "The story of a boxer who gets a shot at the title.", image: "https://m.media-amazon.com/images/M/MV5BMTM2OTUzNDE3NV5BMl5BanBnXkFtZTcwODczMzkzMQ@@._V1_FMjpg_UX1000_.jpg" },
+    { title: "The Secret Life of Walter Mitty", description: "A man escapes his mundane life through adventure.", image: "https://lumiere-a.akamaihd.net/v1/images/image_b49633a4.jpeg?region=0%2C0%2C1400%2C2100" },
+    { title: "Rudy", description: "A man fights to achieve his dreams against all odds.", image: "https://m.media-amazon.com/images/I/71wno0zi96L._AC_UF1000,1000_QL80_.jpg" },
+    { title: "The Social Network", description: "The story behind the creation of Facebook.", image: "https://m.media-amazon.com/images/M/MV5BMjlkNTE5ZTUtNGEwNy00MGVhLThmZjMtZjU1NDE5Zjk1NDZkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+    { title: "Dead Poet's Society", description: "A teacher inspires his students to live boldly.", image: "https://m.media-amazon.com/images/M/MV5BMDYwNGVlY2ItMWYxMS00YjZiLWE5MTAtYWM5NWQ2ZWJjY2Q3XkEyXkFqcGc@._V1_.jpg" },
     // Add more movies here...
   ];
 
   const novels = [
-    { title: "Atomic Habits", description: "A guide to creating good habits and breaking bad ones.", image: "https://m.media-amazon.com/images/I/81F90H7hnML._AC_UF1000,1000_QL80_.jpg" },
-    { title: "The Alchemist", description: "A novel about following your dreams and personal journey.", image: "https://m.media-amazon.com/images/I/81UGPuNl7kL._UF1000,1000_QL80_.jpg" },
-    { title: "The Power of Now", description: "A spiritual guide to living in the present moment.", image: "https://m.media-amazon.com/images/I/81BhCwnUwZL._AC_SY679_.jpg" },
-    { title: "The Secret", description: "A guide to the law of attraction and creating the life you desire.", image: "https://m.media-amazon.com/images/I/71xRbh+kvnL._AC_SY679_.jpg" },
-    { title: "Becoming", description: "A memoir by Michelle Obama about her journey to self-discovery.", image: "https://m.media-amazon.com/images/I/71X2uHq6UsL._AC_SY679_.jpg" },
+    { title: "Atomic Habits", description: "A guide to creating good habits and breaking bad ones.", image: "https://m.media-amazon.com/images/I/81F90H7hnML.jpg" },
+    { title: "The Alchemist", description: "A novel about following your dreams and personal journey.", image: "https://m.media-amazon.com/images/I/81ioPZFMeUL._UF1000,1000_QL80_.jpg" },
+    { title: "The Power of Now", description: "A spiritual guide to living in the present moment.", image: "https://m.media-amazon.com/images/I/61Ij8nLooNL._UF1000,1000_QL80_.jpg" },
+    { title: "The Secret", description: "A guide to the law of attraction and creating the life you desire.", image: "https://m.media-amazon.com/images/I/81lOhiZO2CL._AC_UF1000,1000_QL80_.jpg" },
+    { title: "Becoming", description: "A memoir by Michelle Obama about her journey to self-discovery.", image: "https://m.media-amazon.com/images/I/81KGjsBXQ7L._AC_UF1000,1000_QL80_.jpg" },
     // Add more novels here...
   ];
 
